@@ -4,13 +4,11 @@
  */
 package ar.charlycimino.muestra.java.jsp.login;
 
-import ar.charlycimino.muestra.java.jsp.login.model.Usuario;
 import java.io.IOException;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
 
 /**
  *
@@ -23,10 +21,7 @@ public class PerfilServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        HttpSession session = request.getSession();
-        Usuario user = (Usuario) session.getAttribute("userLogueado");
-        request.setAttribute("userLogueado", user);
-        request.getRequestDispatcher("/WEB-INF/perfil-page.jsp").forward(request, response);
+        // DEBE MOSTRAR LA PÁGINA DE PERFIL DEL USUARIO ACTUALMENTE LOGUEADO
     }
 
 }
