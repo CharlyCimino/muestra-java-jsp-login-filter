@@ -21,12 +21,12 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+        // LE RETORNO EL FORMULARIO DE LOGIN
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+        // VALIDAR SUS CREDENCIALES. SI ESTÁ OK, CREAR SESIÓN Y REDIRIGIR.
     }
 }
