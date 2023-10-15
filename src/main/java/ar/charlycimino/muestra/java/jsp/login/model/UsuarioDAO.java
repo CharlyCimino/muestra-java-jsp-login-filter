@@ -14,10 +14,13 @@ public class UsuarioDAO {
         if (pass.equals("123456")) {
             switch (nombre) {
                 case "homero":
-                    u = new Usuario(nombre, pass, nombre + ".jpg");
+                    u = new Usuario(nombre, pass, "ADMIN", nombre + ".jpg");
                     break;
                 case "bart":
-                    u = new Usuario(nombre, pass);
+                    u = new Usuario(nombre, pass, "USER");
+                    break;
+                case "lisa":
+                    u = new Usuario(nombre, pass, "USER", nombre + ".jpg");
             }
         }
         return u;
