@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>ar.charlycimino</groupId>
-    <artifactId>muestra-java-jsp-login</artifactId>
+    <artifactId>muestra-java-jsp-login-filter</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>muestra-java-jsp-login</name>
+    <name>muestra-java-jsp-login-filter</name>
     
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
