@@ -1,7 +1,7 @@
 <%@ taglib uri="jakarta.tags.core" prefix="c" %>
 
 <c:import url="WEB-INF/includes/inicioHTML.jsp">
-    <c:param name="elTitulo" value="Recetorium" />
+    <c:param name="elTitulo" value="SuperApp" />
 </c:import>
 
 <c:import url="WEB-INF/includes/navbar.jsp" />
