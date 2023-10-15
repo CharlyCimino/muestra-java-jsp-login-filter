@@ -11,18 +11,16 @@ public class Usuario {
     private String nombre;
     private String pass;
     private String nombreFoto;
+    private String rol;
     
-    public Usuario() {
-        this("","");
-    }
-    
-    public Usuario(String nombre, String pass) {
-        this(nombre,pass,"no-user.png");
+    public Usuario(String nombre, String pass, String rol) {
+        this(nombre,pass,rol,"no-user.png");
     }
 
-    public Usuario(String nombre, String pass, String nombreFoto) {
+    public Usuario(String nombre, String pass, String rol, String nombreFoto) {
         this.nombre = nombre;
         this.pass = pass;
+        this.rol = rol;
         this.nombreFoto = nombreFoto;
     }
 
@@ -42,6 +40,14 @@ public class Usuario {
         this.pass = pass;
     }
 
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
+    }
+
     public String getNombreFoto() {
         return nombreFoto;
     }
@@ -52,6 +58,6 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario{" + "nombre=" + nombre + ", pass=" + pass + '}';
-    }
+        return "Usuario{" + "nombre=" + nombre + ", pass=" + pass + ", nombreFoto=" + nombreFoto + ", rol=" + rol + '}';
+    }    
 }

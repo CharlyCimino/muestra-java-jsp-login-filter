@@ -4,9 +4,17 @@
         <filter-name>auth-filter</filter-name>
         <filter-class>ar.charlycimino.muestra.java.jsp.login.filters.AuthFilter</filter-class>
     </filter>
+    <filter>
+        <filter-name>admin-filter</filter-name>
+        <filter-class>ar.charlycimino.muestra.java.jsp.login.filters.AdminFilter</filter-class>
+    </filter>
     <filter-mapping>
         <filter-name>auth-filter</filter-name>
         <url-pattern>/perfil</url-pattern>
+        <url-pattern>/restringida</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>admin-filter</filter-name>
         <url-pattern>/restringida</url-pattern>
     </filter-mapping>
     <servlet>
