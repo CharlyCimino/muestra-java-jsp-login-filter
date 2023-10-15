@@ -25,7 +25,7 @@
         <input type="hidden" name="deDondeViene" value="${param.origen}">
         <input type="submit" value="Iniciar sesión">
     </form>
-        <p><small>Los usuarios son 'homero' y 'bart'. Ambos con clave 123456</small></p>
+        <p><small>Los usuarios son 'homero', 'bart' y 'lisa'. Todos con clave 123456. homero es ADMIN y los demas son USER</small></p>
 </div>
        
 <c:import url="includes/footer.jsp" />
